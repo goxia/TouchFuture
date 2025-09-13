@@ -2,6 +2,8 @@
 
 An intelligent desktop assistant tool designed for Windows 11, focused on touch screen interaction while also supporting stylus and traditional mouse operations.
 
+> **📖 Language / 语言**: English | [中文](README.md)
+
 ## 🚀 Features
 
 ### 🎯 Core Functionality
