@@ -8,13 +8,15 @@
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
     <ApplicationManifest>app.manifest</ApplicationManifest>
-    <AssemblyTitle>TouchFuture</AssemblyTitle>
-    <AssemblyDescription>智能桌面助手工具</AssemblyDescription>
+    <Title>TouchFuture</Title>
+    <Description>Desktop assistant optimized for touch screens.</Description>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <FileVersion>1.0.0.0</FileVersion>
-    <Company>TouchFuture</Company>
+    <InformationalVersion>1.0.0</InformationalVersion>
+    <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    <Company>SuFan</Company>
     <Product>TouchFuture</Product>
-    <Copyright>Copyright © TouchFuture 2025</Copyright>
+    <Copyright>Copyright © SuFan 2025</Copyright>
   </PropertyGroup>
 
   <ItemGroup>

@@ -2,6 +2,10 @@
 bin/
 obj/
 publish/
+public/
+release/
+publish-scd/
+publish-fdd/
 
 # Visual Studio / VS Code
 .vs/
