@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TouchFuture - 智能桌面助手 | Windows 11触控体验</title>
+    <meta name="description" content="TouchFuture是为Windows 11设计的智能桌面助手工具，专注触控屏幕，支持手写笔和传统鼠标操作。">
+    <meta name="keywords" content="Windows 11, 触控, 桌面助手, WPF, .NET 8">
+    
+    <!-- Open Graph 元标签 -->
+    <meta property="og:title" content="TouchFuture - 智能桌面助手">
+    <meta property="og:description" content="为Windows 11设计的智能桌面助手工具，专注触控屏幕体验">
+    <meta property="og:image" content="./Demo-TouchFuture.jpg">
+    <meta property="og:type" content="website">
+    
+    <link rel="stylesheet" href="styles.css">
+    <!-- 使用emoji作为favicon的备选方案 -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">🤖</span>
+                <span class="logo-text">TouchFuture</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">首页</a></li>
+                <li><a href="#features" class="nav-link">功能</a></li>
+                <li><a href="#demo" class="nav-link">演示</a></li>
+                <li><a href="#download" class="nav-link">下载</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">TouchFuture</span>
+                    <br>智能桌面助手
+                </h1>
+                <p class="hero-subtitle">
+                    为Windows 11设计的触控优先桌面助手<br>
+                    优雅简洁的圆形UI，让智能触手可及
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">
+                        <span>📥</span> 立即下载
+                    </a>
+                    <a href="#demo" class="btn btn-secondary">
+                        <span>🎮</span> 查看演示
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">.NET 8.0</span>
+                        <span class="stat-label">现代框架</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">触控优先</span>
+                        <span class="stat-label">交互设计</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">Windows 11</span>
+                        <span class="stat-label">原生集成</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-circle main-circle">
+                    <span class="circle-icon">🤖</span>
+                </div>
+                <div class="floating-circle feature-circle" style="--delay: 0.5s">
+                    <span class="circle-icon">🎤</span>
+                </div>
+                <div class="floating-circle feature-circle" style="--delay: 1s">
+                    <span class="circle-icon">📝</span>
+                </div>
+                <div class="floating-circle feature-circle" style="--delay: 1.5s">
+                    <span class="circle-icon">🌐</span>
+                </div>
+                <div class="floating-circle feature-circle" style="--delay: 2s">
+                    <span class="circle-icon">💬</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特性 -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">核心功能</h2>
+                <p class="section-subtitle">集成Windows 11原生功能，提供触控优先的智能体验</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>常驻桌面</h3>
+                    <p>始终置顶显示，可拖拽到屏幕任意位置。美观的圆形UI设计，不占用过多桌面空间。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">👆</div>
+                    <h3>触控支持</h3>
+                    <p>完全支持手指触摸和手写笔操作，为触控设备量身定制的交互体验。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🎤</div>
+                    <h3>语音输入</h3>
+                    <p>一键调用Windows 11内置语音输入功能 (Win+H)，让语音交互更便捷。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">📝</div>
+                    <h3>实时字幕</h3>
+                    <p>快速启用Windows 11实时字幕功能 (Win+Ctrl+L)，提升听觉辅助体验。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Copilot集成</h3>
+                    <p>快速启动Microsoft Copilot (Win+C)，AI助手触手可及。</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>语音对话</h3>
+                    <p>一键启动Copilot语音对话模式，2秒长按即可开始AI语音交互。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 演示区域 -->
+    <section id="demo" class="demo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">产品演示</h2>
+                <p class="section-subtitle">直观展示TouchFuture的界面和功能</p>
+            </div>
+            
+            <div class="demo-container">
+                <div class="demo-image">
+                    <img src="../Demo-TouchFuture.jpg" alt="TouchFuture演示截图" loading="lazy">
+                    <div class="demo-overlay">
+                        <button class="demo-play-btn">
+                            <span>▶</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="demo-info">
+                    <h3>界面预览</h3>
+                    <p>TouchFuture采用现代化的圆形UI设计，默认显示机器人图标。点击后展开圆形功能菜单，所有功能一目了然。</p>
+                    
+                    <div class="tech-specs">
+                        <h4>技术规格</h4>
+                        <ul>
+                            <li><strong>框架:</strong> .NET 8.0 WPF</li>
+                            <li><strong>目标平台:</strong> Windows 11 24H2 (x64/ARM64)</li>
+                            <li><strong>运行要求:</strong> 无需预装runtime，独立部署</li>
+                            <li><strong>UI技术:</strong> WPF with XAML，支持高DPI</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2>开始使用 TouchFuture</h2>
+                    <p>免费下载，立即体验智能触控桌面助手</p>
+                    
+                    <div class="download-buttons">
+                        <a href="https://github.com/goxia/TouchFuture/releases/latest" class="btn btn-primary btn-large" target="_blank">
+                            <span>📥</span> 下载最新版本
+                        </a>
+                        <a href="https://github.com/goxia/TouchFuture" class="btn btn-secondary btn-large" target="_blank">
+                            <span>⭐</span> GitHub源码
+                        </a>
+                    </div>
+                    
+                    <div class="download-info">
+                        <div class="info-item">
+                            <span class="info-label">系统要求:</span>
+                            <span class="info-value">Windows 11 24H2+</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">文件大小:</span>
+                            <span class="info-value">< 50MB</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-label">许可协议:</span>
+                            <span class="info-value">个人学习使用</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="download-visual">
+                    <div class="download-illustration">
+                        <div class="download-circle">
+                            <span class="download-icon">🤖</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="footer-logo">🤖 TouchFuture</span>
+                    <p>让Windows 11触控体验更智能</p>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>项目</h4>
+                        <ul>
+                            <li><a href="https://github.com/goxia/TouchFuture">GitHub仓库</a></li>
+                            <li><a href="https://github.com/goxia/TouchFuture/releases">版本发布</a></li>
+                            <li><a href="https://github.com/goxia/TouchFuture/issues">问题反馈</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h4>文档</h4>
+                        <ul>
+                            <li><a href="https://github.com/goxia/TouchFuture/blob/main/README.md">使用指南</a></li>
+                            <li><a href="https://github.com/goxia/TouchFuture/blob/main/README_EN.md">English Docs</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 TouchFuture. 仅供学习和个人使用.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
