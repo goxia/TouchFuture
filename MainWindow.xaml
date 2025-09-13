@@ -1,0 +1,100 @@
+<Window x:Class="TouchFuture.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="TouchFuture" 
+        Height="80" Width="80"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Background="{x:Null}"
+        Topmost="True"
+        ShowInTaskbar="False"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen">
+    
+    <Grid Background="Transparent">
+        <Ellipse x:Name="MenuBackground"
+                 Width="200" Height="200"
+                 Fill="{StaticResource MenuBackgroundBrush}"
+                 Stroke="White" StrokeThickness="2"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 Visibility="Collapsed"/>
+        
+        <Canvas x:Name="MenuCanvas" 
+                Width="200" Height="200"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Visibility="Collapsed">
+            
+            <Button x:Name="CloseButton"
+                    Canvas.Left="75" Canvas.Top="75"
+                    Width="50" Height="50"
+                    Style="{StaticResource CloseButtonStyle}"
+                    Content="×"
+                    FontSize="20"
+                    Click="CloseButton_Click"/>
+            
+            <Button x:Name="VoiceButton"
+                    Canvas.Left="80" Canvas.Top="20"
+                    Width="40" Height="40"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Content="🎤"
+                    FontSize="18"
+                    Click="VoiceButton_Click"/>
+            
+            <Button x:Name="CaptionButton"
+                    Canvas.Left="140" Canvas.Top="80"
+                    Width="40" Height="40"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Content="📝"
+                    FontSize="18"
+                    Click="CaptionButton_Click"/>
+            
+            <Button x:Name="CopilotButton"
+                    Canvas.Left="80" Canvas.Top="140"
+                    Width="40" Height="40"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Content="💬"
+                    FontSize="18"
+                    Click="CopilotButton_Click"/>
+            
+            <Button x:Name="AltSpaceButton"
+                    Canvas.Left="20" Canvas.Top="80"
+                    Width="40" Height="40"
+                    Style="{StaticResource MenuButtonStyle}"
+                    Content="🌐"
+                    FontSize="18"
+                    Click="AltSpaceButton_Click"/>
+        </Canvas>
+        
+        <Ellipse Name="AssistantButton" 
+                 Width="70" Height="70"
+                 Fill="{StaticResource AssistantButtonBrush}"
+                 Stroke="#4A90E2" 
+                 StrokeThickness="2"
+                 Cursor="Hand"
+                 HorizontalAlignment="Center"
+                 VerticalAlignment="Center"
+                 MouseDown="MainButton_MouseDown"
+                 MouseMove="MainButton_MouseMove"
+                 MouseUp="MainButton_MouseUp"
+                 TouchDown="MainButton_TouchDown"
+                 TouchMove="MainButton_TouchMove"
+                 TouchUp="MainButton_TouchUp">
+            <Ellipse.Effect>
+                <DropShadowEffect ShadowDepth="3" BlurRadius="10" Opacity="0.3"/>
+            </Ellipse.Effect>
+        </Ellipse>
+        
+        <TextBlock Text="🤖" 
+                   FontSize="28"
+                   HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   Foreground="White"
+                   IsHitTestVisible="False">
+            <TextBlock.Effect>
+                <DropShadowEffect ShadowDepth="1" BlurRadius="2" Opacity="0.5"/>
+            </TextBlock.Effect>
+        </TextBlock>
+    </Grid>
+</Window>
