@@ -2,7 +2,7 @@
 
 一个为Windows 11设计的智能桌面助手工具，专注在触控屏幕，也支持手写笔以及传统鼠标操作。
 
-> **📖 Language / 语言**: [English](README_EN.md) | 中文 | [页面](https://goxia.github.io/TouchFuture/)
+> **📖 Language / 语言**: [English](README_EN.md) | 中文 | [页面](https://goxia.github.io/TouchFuture/){:target="_blank"}
 
 > **🖥️ 演示**
 
