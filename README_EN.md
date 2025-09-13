@@ -4,6 +4,9 @@ An intelligent desktop assistant tool designed for Windows 11, focused on touch 
 
 > **📖 Language / 语言**: English | [中文](README.md)
 
+> **🖥️ Demo**
+![Demo-TouchFuture](Demo-TouchFuture.jpg)
+
 ## 🚀 Features
 
 ### 🎯 Core Functionality
@@ -102,5 +105,6 @@ The circular interface uses a clock-position layout:
 This project is for educational and personal use only. Commercial use is prohibited without explicit permission. Please contact the author for special requirements.
 
 ---
+
 
 *TouchFuture - Making Windows 11 touch experience smarter* 🚀
