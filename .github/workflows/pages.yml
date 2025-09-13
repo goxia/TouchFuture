@@ -1,25 +1,22 @@
-name: Deploy to GitHub Pages
+name: Deploy GitHub Pages
 
+# 只在推送到main分支时触发
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# 设置GITHUB_TOKEN权限以允许部署到GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+# 只允许一个并发部署
 concurrency:
   group: "pages"
   cancel-in-progress: false
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -35,8 +32,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload docs directory for GitHub Pages
-          path: './docs'
+          path: ./docs
       
       - name: Deploy to GitHub Pages
         id: deployment
