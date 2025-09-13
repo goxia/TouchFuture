@@ -4,6 +4,10 @@
 
 > **📖 Language / 语言**: [English](README_EN.md) | 中文
 
+> **🖥️ 演示**
+
+![Demo-TouchFuture](Demo-TouchFuture.jpg)
+
 ## 🚀 功能特性
 
 ### 🎯 核心功能
@@ -77,3 +81,4 @@ TouchFuture/
 ---
 
 *TouchFuture - 让Windows 11触控体验更智能* 🚀
+
